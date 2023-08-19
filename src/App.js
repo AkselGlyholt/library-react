@@ -73,16 +73,16 @@ function App() {
       <div className="App">
         <Nav numberOfItems={numberOfItems()} />
         <Routes>
-          <Route path="/library-react" exact element={<Home />} />
-          <Route path="/library-react/books" exact element={<Books books={books} />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/books" exact element={<Books books={books} />} />
           <Route
-            path="/library-react/books/:id"
+            path="/books/:id"
             element={
               <BookInfo books={books} addToCart={addItemToCart} cart={cart} />
             }
           />
           <Route
-            path="/library-react/cart"
+            path="/cart"
             exact
             element={
               <Cart

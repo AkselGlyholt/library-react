@@ -9,7 +9,7 @@ function Explore() {
           <h2>
             Explore more <span className='purple'>Books</span>
           </h2>
-          <Link to="/library-react/books">
+          <Link to="/books">
             <button className='btn'>Explore Book</button>
           </Link>
         </div>

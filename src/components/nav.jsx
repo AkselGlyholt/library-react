@@ -15,17 +15,17 @@ const Nav = ({ numberOfItems }) => {
   return (
     <nav>
       <div className="nav__container">
-        <Link to="/library-react">
+        <Link to="/">
           <img src={LibraryLogo} alt="" className="logo" />
         </Link>
         <ul className="nav__links">
           <li className="nav__list">
-            <Link to="/library-react" className="nav__link">
+            <Link to="/" className="nav__link">
               Home
             </Link>
           </li>
           <li className="nav__list">
-            <Link to="/library-react/books" className="nav__link">
+            <Link to="/books" className="nav__link">
               Books
             </Link>
           </li>
@@ -33,7 +33,7 @@ const Nav = ({ numberOfItems }) => {
             <FontAwesomeIcon icon="bars" />
           </button>
           <li className="nav__icon">
-            <Link to="/library-react/cart" className="nav__link">
+            <Link to="/cart" className="nav__link">
               <FontAwesomeIcon icon="shopping-cart" />
             </Link>
             {
@@ -47,9 +47,9 @@ const Nav = ({ numberOfItems }) => {
           </button>
           <ul className="menu__list">
             <li className="menu__links">
-              <Link to="/library-react" className="menu__link">Home</Link>
-              <Link to="/library-react/books" className="menu__link">Books</Link>
-              <Link to="/library-react/cart" className="menu__link">Cart</Link>
+              <Link to="/" className="menu__link">Home</Link>
+              <Link to="/books" className="menu__link">Books</Link>
+              <Link to="/cart" className="menu__link">Cart</Link>
             </li>
           </ul>
         </div>
